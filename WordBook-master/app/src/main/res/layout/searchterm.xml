@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TableRow>
+        <EditText
+            android:id="@+id/txtSearchWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:textColorHint="#192f60"
+            android:hint="请输入要查询的单词"/>
+    </TableRow>
+
+</TableLayout>

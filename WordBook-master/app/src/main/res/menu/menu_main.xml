@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cn.edu.bistu.cs.se.words.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="本地查找"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_insert"
+        android:orderInCategory="100"
+        android:title="新增单词"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search2"
+        android:orderInCategory="100"
+        android:title="词典搜索"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search3"
+        android:orderInCategory="100"
+        android:title="英语网站"
+        app:showAsAction="never" />
+</menu>

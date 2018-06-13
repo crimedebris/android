@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="right"
+    android:orientation="vertical"
+    android:background="#c8bfe4">
+
+    <EditText
+        android:id="@+id/English"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:gravity="top"
+        android:hint="请输入单词："
+        android:textColor="#192f60"
+        android:textColorHint="#192f60" />
+
+
+    <Button
+        android:id="@+id/translate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/English"
+        android:layout_marginTop="25dp"
+        android:background="#7a74df"
+        android:text="翻译"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加生词本"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#7a74df"
+        android:layout_alignParentRight="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回单词本"
+        android:background="#7a74df"
+        android:id="@+id/return3"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/input"
+        android:layout_toLeftOf="@+id/input" />
+
+    <TextView
+        android:id="@+id/eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/translate"
+        android:layout_alignLeft="@+id/English"
+        android:layout_alignRight="@+id/translate"
+        android:layout_alignStart="@+id/English"
+        android:layout_below="@+id/translate"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:textColor="#192f60"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+
+        android:layout_height="180dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/eng"
+        android:layout_marginTop="25dp"
+        android:textColor="#192f60"
+        android:textSize="20dp" />
+</RelativeLayout>

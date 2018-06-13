@@ -1,0 +1,43 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.elegy1004.wordbook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".WordsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ray"
+        android:label="Words Note"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Words Note"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WordDetailActivity"
+            android:label="详细内容" />
+        <activity
+            android:name=".MainActivity3"
+            android:label="词典" />
+        <activity
+            android:name=".MainActivity4"
+            android:label="词典" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="英语新闻" />
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.example.yuan.mywordbook.cn.edu.bistu.cs.se.words.MyContentProvider"
+            android:enabled="true"
+            android:exported="true"></provider>
+    </application>
+
+</manifest>
